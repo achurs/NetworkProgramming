@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(int argc, char const *argv[])
 {
     // ANSI escape codes for colors
@@ -7,7 +6,8 @@ int main(int argc, char const *argv[])
     const char* GREEN = "\033[1;32m";
     const char* YELLOW = "\033[1;33m";
     const char* RESET = "\033[0m";
-
+    const char* BLUE = "\033[1;34m";
+    const char* RED = "\033[1;31m";
     printf("%s", CYAN);
     printf("    *    *    *    *    *    *    *    \n");
     printf("   ***  ***  ***  ***  ***  ***  ***   \n");

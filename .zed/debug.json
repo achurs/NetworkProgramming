@@ -1,0 +1,24 @@
+[
+{
+    "label": "Debug C Program (CodeLLDB)",
+    "request": "launch",
+    "adapter": "CodeLLDB",
+    "program": "$ZED_WORKTREE_ROOT/main",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "args": [],
+    "env": {},
+    "stop_on_entry": false
+  },
+  {
+    "label": "Debug C Program (GDB)",
+    "request": "launch",
+    "adapter": "gdb",
+    "program": "$ZED_WORKTREE_ROOT/main",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "args":["first_arg", "second_arg"],
+    "env": {
+      "MY_CUSTOM_ENV_VAR": "value"
+    },
+    "stop_on_entry": false
+  }
+]
