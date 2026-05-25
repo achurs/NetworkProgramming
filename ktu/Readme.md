@@ -7,6 +7,18 @@
       dist[i][j] = dist[i][k] + dist[k][j];
     }
     ```
-2. Leaky Bucket
-  - hiii
+  2. Leaky Bucket
+     - Had a small hiccup on the logic:
+       ```c
+       if(bucket + packetsize <= bucketsize) {
+         bucket += packetsize;
+       }
+       ```
+     - The main logic is the one above the leaking logic, which I had completed without issue:
+       ```c
+       if(bucket >= outputrate) {
+         bucket -= outputrate;
+       }
+       ```
+
 3. TCP/IP client-server model
